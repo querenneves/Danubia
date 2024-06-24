@@ -1,0 +1,104 @@
+/* Estilos para o header */
+body {
+    font-family: "Harmonic Essence", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffbb00ab;
+}
+
+header {
+    background-color: #1A3365;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-top: 30px;
+    font-family: "Harmonic Essence", Arial, sans-serif;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.other-pages {
+    margin-top: 20px;
+}
+
+.other-page-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFBB00;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.other-page-button:hover {
+    background-color: #FFBB00;
+    animation: pulse 1s infinite; /* Adiciona a animação de pulso */
+}
+
+@media (min-width: 769px) {
+    .other-page-button:hover {
+        animation: pulse 1s infinite; /* Adiciona a animação de pulso apenas em telas maiores que 768px */
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.centered-image {
+    position: relative;
+    text-align: center;
+    margin-top: 50px; /* Espaço maior entre o header e a imagem */
+}
+
+.centered-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Definição da animação de flutuação */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
